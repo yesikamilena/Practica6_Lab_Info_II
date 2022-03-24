@@ -18,6 +18,7 @@ cuerpo::cuerpo(float _x, float _y, float _vx, float _vy, float _rad, float _masa
 
     // ajustando los cuadrates
     setPos((x/EX), (-y/EY));
+    setRad(radio/ER);
 }
 
 QRectF cuerpo::boundingRect() const

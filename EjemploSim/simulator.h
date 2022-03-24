@@ -1,10 +1,17 @@
 #ifndef SIMULATOR_H
 #define SIMULATOR_H
 
+#include <iostream>
+
+using namespace std;
+
 #include <QGraphicsLineItem>
 #include <QGraphicsScene>
 #include <QMainWindow>
 #include <QTimer>
+#include <fstream>
+#include <sstream>
+#include <string>
 
 #include "cuerpo.h"
 
@@ -59,8 +66,19 @@ private:
     //variables para la aceleración
     double radio;
     double para_tetha;
+    double tetharad=0;
     double tetha=0;
     float aceleracionx;
     float aceleraciony;
+
+    float x[20];
+    float y[20];
+
+
+    ofstream datos;
+    string nombre_txt;
+
+
+
 };
 #endif // SIMULATOR_H

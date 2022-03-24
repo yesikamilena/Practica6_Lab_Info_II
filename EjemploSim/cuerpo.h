@@ -1,8 +1,9 @@
 #ifndef CUERPO_H
 #define CUERPO_H
 
-#define EX 600
-#define EY 600
+#define EX 30
+#define EY 30
+#define ER 50
 
 //#define G 6.67384 * pow(10,-11)
 #define GRAV 1
